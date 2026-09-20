@@ -81,3 +81,47 @@
     height: 32px;
     fill: white;
 }
+
+@media (max-width: 768px) {
+    .logo {
+        max-width: 90%;
+    }
+
+    .members {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .members {
+        padding: 0 15px;
+        gap: 15px;
+    }
+
+    .members .member {
+        padding: 12px;
+    }
+
+    .members .member .icon {
+        width: 90px;
+    }
+
+    .members .member .info .name {
+        font-size: 32px;
+    }
+
+    .members .member .info .url {
+        font-size: 16px;
+    }
+
+    .twitter {
+        bottom: 15px;
+        left: 15px;
+        padding: 10px;
+    }
+
+    .twitter svg {
+        width: 26px;
+        height: 26px;
+    }
+}
