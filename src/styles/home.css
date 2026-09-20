@@ -1,0 +1,83 @@
+.logo {
+    margin: auto;
+    width: 600px;
+    height: auto;
+}
+
+.members {
+    max-width: 600px;
+    margin: auto;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.members .member {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 15px;
+    background-color: var(--card-bg);
+    line-height: 24px;
+    border-bottom: var(--primary-colour) 4px solid;
+    border-radius: 12px;
+    transition: border-bottom 0.15s ease;
+}
+
+.members .member:hover {
+    border-bottom: var(--secondary-colour) 4px solid;
+}
+
+.members .member .icon {
+    width: 125px;
+    border: var(--primary-colour) 5px solid;
+    border-radius: 15px;
+    transform: rotate(-2deg);
+    transition: transform 0.15s ease, border 0.15s ease;
+}
+
+.members .member:hover .icon {
+    transform: rotate(0deg);
+    border: var(--secondary-colour) 5px solid;
+}
+
+.members .member .info {
+    flex: 1;
+}
+
+.members .member .info .name {
+    font-size: 48px;
+    margin-bottom: 2px;
+    text-transform: uppercase;
+}
+
+.members .member .info .url {
+    font-size: 20px;
+    margin-bottom: 2px;
+    text-transform: lowercase;
+}
+
+.twitter {
+    position: fixed;
+    bottom: 30px;
+    left: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: #1da1f2;
+    border-radius: 50%;
+    box-shadow: #000000bb 0px 0px 10px;
+    transition: scale 0.25s ease;
+}
+
+.twitter:hover {
+    scale: 1.1;
+}
+
+.twitter svg {
+    width: 32px;
+    height: 32px;
+    fill: white;
+}

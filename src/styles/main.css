@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --text: #0f0f0f;
+    --card-bg: #f0f0f0;
+    --primary-colour: #ea53a6;
+    --secondary-colour: #89c022;
+}
+
+@font-face {
+    font-family: 'RCT2';
+    src: url(/src/assets/fonts/RCT2.ttf) format('truetype');
+}
+
+html {
+    scroll-behavior: smooth;
+    background-image: url(/src/assets/images/brand/background.png);
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'RCT2';
+    color: var(--text);
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    user-select: none;
+}
